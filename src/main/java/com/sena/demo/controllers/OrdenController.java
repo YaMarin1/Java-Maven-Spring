@@ -15,20 +15,25 @@ public class OrdenController {
     @Autowired
     OrdenService ordenService;
 
+
     @GetMapping()
     public ArrayList<OrdenModel> obtenerOrdenes(){
         return ordenService.obtenerOrdenes();
     }
+
 
     @PostMapping()
     public OrdenModel guardarOrden(@RequestBody OrdenModel orden){
         return this.ordenService.guardarOrden(orden);
     }
 
+
+    //Recibe la id enviada para mostrar la informacion
     @GetMapping( path = "/{id}")
     public Optional<OrdenModel> obtenerOrdenPorId(@PathVariable("id") Long id){
         return this.ordenService.obtenerPorId(id);
     }
+
 
     @GetMapping("/query")
     public ArrayList<OrdenModel> obtenerOrdenPorDocumento(@RequestParam("documento") Long documento){

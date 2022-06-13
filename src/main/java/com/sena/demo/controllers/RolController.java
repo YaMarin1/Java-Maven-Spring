@@ -29,12 +29,6 @@ public class RolController {
         return this.rolService.obtenerPorId(id);
     }
 
-    /*
-    @GetMapping("/query")
-    public ArrayList<RolModel> obtenerRolPorNombrerol(@RequestParam("nombrerol") String nombrerol) {
-        return this.rolService.obtenerPorNombrerol(nombrerol);
-    }
-     */
 
     @DeleteMapping( path = "/{id}")
     public String eliminarPorId(@PathVariable("id") Long id) {

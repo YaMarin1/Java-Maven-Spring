@@ -11,7 +11,6 @@ public class RolModel {
     private Long id;
 
     private String nombrerol;
-    //private Integer prioridad;
 
     public Long getId() {
         return id;
@@ -29,13 +28,4 @@ public class RolModel {
         this.nombrerol = nombrerol;
     }
 
-    /*
-    public Integer getPrioridad() {
-        return prioridad;
-    }
-
-    public void setPrioridad(Integer prioridad) {
-        this.prioridad = prioridad;
-    }
-     */
 }

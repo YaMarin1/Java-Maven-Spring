@@ -8,5 +8,4 @@ import java.util.ArrayList;
 
 @Repository
 public interface RolRepository extends CrudRepository<RolModel, Long> {
-    //public abstract ArrayList<RolModel> finByNombrerol(String nombrerol);
 }
